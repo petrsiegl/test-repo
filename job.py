@@ -2,6 +2,6 @@ from ivis import ivis
 import requests
 
 print(ivis.accessToken)
-url = f"http://localhost:8444/{ivis.accessToken}/rest/files/job/files/56/"
+url = f"http://localhost:8444/{ivis.accessToken}/rest/files/job/file/56/"
 test_file = open("job.py", "rb")
 test_response = requests.post(url, files = {"files[]": test_file})
