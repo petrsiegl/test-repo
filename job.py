@@ -1,4 +1,6 @@
 from ivis import ivis
 import requests
 
-print(ivis.params['file'])
+fileId = ivis.params['file']
+
+print(ivis.get_job_file(fileId).text)
